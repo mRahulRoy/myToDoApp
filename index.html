@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Lato:ital,wght@1,300&family=Roboto:ital@1&family=Ubuntu:ital,wght@0,300;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Lato:ital,wght@1,300&family=Roboto:ital@1&family=Ubuntu:ital,wght@0,300;1,300;1,500;1,700&display=swap"
+        rel="stylesheet">
     <style>
         html {
             font-size: 10px;
@@ -15,6 +17,10 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+        }
+
+        header {
+            margin-bottom: 50px;
         }
 
         header nav {
@@ -49,13 +55,14 @@
         }
 
         .cont {
+
             width: 70%;
             margin: 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            /* background-color: brown; */
+            border-radius: 50px;
         }
 
         .cont .h1-cont h1 {
@@ -82,7 +89,7 @@
             padding: 30px;
             width: 90%;
             height: 100px;
-            /* background-color: chartreuse; */
+            border-radius: 10px;
         }
 
         .table-cont input[type="text"] {
@@ -93,7 +100,7 @@
             padding-right: 10px;
             border-radius: 10px;
             font-size: 2.5rem;
-           
+
         }
 
         .table-cont button {
@@ -102,6 +109,8 @@
             margin-right: 10px;
             border-radius: 10px;
             font-size: 1.8rem;
+            color :white;
+            background: rgb(243, 48, 48);
         }
 
         .main-table-cont {
@@ -114,23 +123,27 @@
             border-radius: 10px;
             width: 100%;
             border-collapse: collapse;
-           
         }
-        #edit,#delete{
+
+        #edit,
+        #delete {
             width: 60px;
             border: none;
             height: 45px;
             border-radius: 9px;
             cursor: pointer;
         }
+
         table td {
             padding: 10px;
         }
-        table tr td{
-            
+
+        table tr td {
+
             font-family: 'Roboto', sans-serif;
             font-family: 'Ubuntu', sans-serif;
         }
+
         table th {
             font-size: 2.5rem;
             width: 30px;
@@ -145,7 +158,7 @@
         table .center {
             text-align: center;
             vertical-align: top;
-           
+
         }
 
         table tbody tr:nth-child(odd) {
@@ -153,136 +166,158 @@
         }
 
         /* media querries */
-        @media (max-width:769px){
-            html{
+        @media (max-width:769px) {
+            html {
                 font-size: 8px;
             }
-            .cont{
+
+            .cont {
                 width: 90%;
             }
-            .table-cont input[type="text"]{
+
+            .table-cont input[type="text"] {
                 width: 1000px;
             }
-            .h1-cont{
+
+            .h1-cont {
                 width: 100%;
-              
+
             }
-          
-            .table-cont button{
+
+            .table-cont button {
                 padding: 2px;
                 width: 300px;
             }
         }
 
         @media (max-width:609px) {
-            html{
+            html {
                 font-size: 7px;
             }
-            header nav li a{
+
+            header nav li a {
                 font-size: 6rem;
             }
-            .table-cont button{
+
+            .table-cont button {
                 font-size: 2rem;
             }
-            header nav input[type="search"]::placeholder{
+
+            header nav input[type="search"]::placeholder {
                 font-size: 2.5rem;
             }
-            header nav input[type="search"]{
+
+            header nav input[type="search"] {
                 width: 200px;
                 height: 35px;
             }
-            table{
+
+            table {
                 font-size: 3rem;
             }
         }
 
-        @media (max-width:538px){
-            html{
+        @media (max-width:538px) {
+            html {
                 font-size: 6px;
             }
-            header nav li a{
+
+            header nav li a {
                 font-size: 6rem;
             }
-            
-            .cont{
+
+            .cont {
                 width: 100%;
             }
+
             .main-table-cont {
-               
+
                 width: 100%;
             }
-            .table-cont{
+
+            .table-cont {
                 width: 100% !important;
             }
 
-            .table-cont button{
+            .table-cont button {
                 width: 400px;
                 font-size: 2rem;
             }
-            .table-cont input[type="text"]{
+
+            .table-cont input[type="text"] {
                 width: 200px;
             }
         }
 
-        @media (max-width:511px){
-            html{
+        @media (max-width:511px) {
+            html {
                 font-size: 5px;
             }
-            .h1-cont{
+
+            .h1-cont {
                 width: 100%;
             }
-            .h1-cont h1{
+
+            .h1-cont h1 {
                 font-size: 6rem !important;
             }
-            .table-cont input[type="text"]{
-                width:300px ;
+
+            .table-cont input[type="text"] {
+                width: 300px;
             }
-            .table-cont button{
+
+            .table-cont button {
                 width: 100px;
                 margin: 2px;
                 font-size: 3rem;
-                
+
             }
         }
 
-        @media (max-width:463px){
-            html{
+        @media (max-width:463px) {
+            html {
                 font-size: 4px;
             }
-            
-            .table-cont input[type="text"]{
-                width:150px ;
+
+            .table-cont input[type="text"] {
+                width: 150px;
             }
-            .table-cont button{
+
+            .table-cont button {
                 width: 250px;
                 margin: 0 2px;
                 font-size: 3rem;
             }
-            .cont .table-cont{
+
+            .cont .table-cont {
                 width: 100%;
             }
         }
-        @media (max-width:367px){
-            html{
+
+        @media (max-width:367px) {
+            html {
                 font-size: 5px;
             }
-            .h1-cont h1{
+
+            .h1-cont h1 {
                 font-size: 5rem !important;
             }
-           
-            .table-cont{
+
+            .table-cont {
                 height: 200px !important;
-              align-items: flex-start !important;
+                align-items: flex-start !important;
                 flex-direction: column;
             }
-            .table-cont button{
+
+            .table-cont button {
                 margin-top: 20px;
                 width: 100px;
                 height: 50px;
             }
-            .table-cont input[type="text"]{
-                width:300px ;
-                height: 70px ;
+
+            .table-cont input[type="text"] {
+                width: 300px;
+                height: 70px;
             }
         }
     </style>
@@ -293,7 +328,7 @@
     <header>
         <nav>
             <li><a href="#">TOdo</a></li>
-            <input type="search" placeholder="search here">
+            <input type="search" id="search" placeholder="search here">
         </nav>
     </header>
 
@@ -303,8 +338,10 @@
                 <h1>Welcome in Todo List Application</h1>
             </div>
             <div class="table-cont">
+                <input type="hidden" id="saveIndex">
                 <input type="text" id="inputText" placeholder="Add your Note Here">
                 <button id="addTask">Add Task</button>
+                <button id="saveTask" style="display: none;">Save Task</button>
                 <button id="deleteAll">Delete All</button>
             </div>
             <div class="main-table-cont">
@@ -341,15 +378,19 @@
         });
         addbtn.addEventListener("click", function () {
             let inputtext = inputTextVal.value;
-            let localStorageText = localStorage.getItem("notes");
-            if (localStorageText == null) {
-                notesObj = [];
+            if (inputtext.trim() != 0) {
+                let localStorageText = localStorage.getItem("notes");
+                if (localStorageText == null) {
+                    notesObj = [];
+                }
+                else {
+                    notesObj = JSON.parse(localStorageText);
+                }
+                notesObj.push(inputtext);
+                inputTextVal.value = "";
+                localStorage.setItem("notes", JSON.stringify(notesObj));
             }
-            else {
-                notesObj = JSON.parse(localStorageText);
-            }
-            notesObj.push(inputtext);
-            localStorage.setItem("notes", JSON.stringify(notesObj));
+
             showNotes();
         });
 
@@ -368,13 +409,70 @@
                          <tr>
                             <td class="center">${index + 1}</td>
                             <td>${item}</td>
-                            <td class="center"><button id="edit"><i class="far fa-edit"></i><br>Edit</button></td>
+                            <td class="center"><button onclick="editTask(${index})" id="edit"><i class="far fa-edit"></i><br>Edit</button></td>
                             <td class="center">Complete</td>
-                            <td class="center"><button id="delete"><i class="fas fa-trash-alt"></i><br>Delete</button></td>
+                            <td class="center"><button id="deletItem" onclick="deleteNote(${index})"><i class="fas fa-trash-alt"></i><br>Delete</button></td>
                         </tr>  `;
             });
             body.innerHTML = html;
         }
+
+        function editTask(index) {
+            let addbtn = document.getElementById("addTask");
+            let saveIndex = document.getElementById("saveIndex");
+            let saveTaskbtn = document.getElementById("saveTask");
+            saveIndex.value = index;
+
+            let localStorageText = localStorage.getItem("notes");
+            let notesObj = JSON.parse(localStorageText);
+            inputTextVal.value = notesObj[index];
+            saveTaskbtn.style.display = "block";
+            addbtn.style.display = "none";
+        }
+        // save task 
+        let saveTaskbtn = document.getElementById("saveTask");
+        saveTaskbtn.addEventListener("click", function () {
+
+            let localStorageText = localStorage.getItem("notes");
+            let notesObj = JSON.parse(localStorageText);
+            let saveIndex = document.getElementById("saveIndex").value;
+            notesObj[saveIndex] = inputTextVal.value;
+            localStorage.setItem("notes", JSON.stringify(notesObj));
+            showNotes();
+            addbtn.style.display = "block";
+            saveTaskbtn.style.display = "none";
+            inputTextVal.value = "";
+        });
+
+        function deleteNote(index) {
+            let localStorageText = localStorage.getItem("notes");
+            let notesObj = JSON.parse(localStorageText);
+            notesObj.splice(index, 1);
+            localStorage.setItem("notes", JSON.stringify(notesObj));
+            showNotes();
+        }
+
+
+        let searchText = document.getElementById("search");
+            searchText.addEventListener("input",function()
+        {
+            let tr_list = document.querySelectorAll("tr");
+            Array.from(tr_list).forEach(function (item) 
+            {
+                let searchedText = item.getElementsByTagName("td")[0].innerText;
+                let searchTextBoxVal = searchText.value;
+                let re = new RegExp(searchTextBoxVal, 'gi');
+                if (searchedText.match(re)) {
+                    item.style.display = "table-row";
+                }
+                else {
+                    item.style.display = "none";
+                }
+            });
+
+        });
+
+
     </script>
     <script src="https://kit.fontawesome.com/461f1304b1.js" crossorigin="anonymous"></script>
 
