@@ -112,7 +112,7 @@
             color :white;
             background: rgb(243, 48, 48);
         }
-
+       
         .main-table-cont {
             width: 90%;
             margin-top: 20px;
@@ -126,7 +126,7 @@
         }
 
         #edit,
-        #delete {
+        #deleteItem{
             width: 60px;
             border: none;
             height: 45px;
@@ -411,7 +411,7 @@
                             <td>${item}</td>
                             <td class="center"><button onclick="editTask(${index})" id="edit"><i class="far fa-edit"></i><br>Edit</button></td>
                             <td class="center">Complete</td>
-                            <td class="center"><button id="deletItem" onclick="deleteNote(${index})"><i class="fas fa-trash-alt"></i><br>Delete</button></td>
+                            <td class="center"><button id="deleteItem" onclick="deleteNote(${index})"><i class="fas fa-trash-alt"></i><br>Delete</button></td>
                         </tr>  `;
             });
             body.innerHTML = html;
